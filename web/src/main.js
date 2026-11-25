@@ -1,5 +1,8 @@
 import './style.css'
 
+const base = import.meta.env.BASE_URL
+const img = (file) => `${base}images/${file}`
+
 const app = document.querySelector('#app')
 
 app.innerHTML = `
@@ -7,7 +10,7 @@ app.innerHTML = `
 
   <header class="site-header" data-reveal>
     <a class="brand-nav" href="#top" aria-label="На главную">
-      <img src="/images/logo.jpg" alt="" width="40" height="40" />
+      <img src="${img('logo.jpg')}" alt="" width="40" height="40" />
       <span>Студия Махновского</span>
     </a>
     <nav class="nav" aria-label="Основное">
@@ -35,7 +38,7 @@ app.innerHTML = `
         <div class="hero__copy" data-reveal>
           <img
             class="hero__seal"
-            src="/images/logo.jpg"
+            src="${img('logo.jpg')}"
             width="220"
             height="220"
             alt="Студия Махновского — услуги и продукция, работаем для вас"
@@ -52,7 +55,7 @@ app.innerHTML = `
         </div>
         <figure class="hero__product" data-reveal data-delay="1">
           <img
-            src="/images/hero-calendar.jpg"
+            src="${img('hero-calendar.jpg')}"
             alt="Календарь трио с видами Оленегорска — печать студии Махновского"
             width="720"
             height="960"
@@ -73,7 +76,7 @@ app.innerHTML = `
             <h3>Съёмка</h3>
             <p>Портреты, семьи, события и природа Оленегорска</p>
           </div>
-          <img src="/images/shoot.jpg" alt="Пример семейной съёмки" width="280" height="280" />
+          <img src="${img('shoot.jpg')}" alt="Пример семейной съёмки" width="280" height="280" />
         </li>
         <li class="lane" data-reveal>
           <div class="lane__text">
@@ -81,7 +84,7 @@ app.innerHTML = `
             <h3>Печать</h3>
             <p>Фотографии, постеры, холсты, визитки и документы</p>
           </div>
-          <img src="/images/prints.jpg" alt="Готовые фотоотпечатки" width="280" height="280" />
+          <img src="${img('prints.jpg')}" alt="Готовые фотоотпечатки" width="280" height="280" />
         </li>
         <li class="lane" data-reveal>
           <div class="lane__text">
@@ -89,7 +92,7 @@ app.innerHTML = `
             <h3>Сувениры</h3>
             <p>Кружки, магниты, календари и печать на заказ</p>
           </div>
-          <img src="/images/mug.jpg" alt="Кружка с видом Оленегорска" width="280" height="280" />
+          <img src="${img('mug.jpg')}" alt="Кружка с видом Оленегорска" width="280" height="280" />
         </li>
         <li class="lane" data-reveal>
           <div class="lane__text">
@@ -97,7 +100,7 @@ app.innerHTML = `
             <h3>Реставрация</h3>
             <p>Восстановление старых фотографий и документов</p>
           </div>
-          <img src="/images/restore.jpg" alt="Реставрация старого фото: до и после" width="280" height="280" />
+          <img src="${img('restore.jpg')}" alt="Реставрация старого фото: до и после" width="280" height="280" />
         </li>
       </ol>
     </section>
@@ -110,39 +113,39 @@ app.innerHTML = `
       </div>
       <div class="catalog-grid" data-reveal>
         <article class="item item--wide">
-          <img src="/images/calendar-trio.jpg" alt="Календарь трио" />
+          <img src="${img('calendar-trio.jpg')}" alt="Календарь трио" />
           <h3>Календарь трио</h3>
         </article>
         <article class="item">
-          <img src="/images/mug.jpg" alt="Кружка Оленегорск" />
+          <img src="${img('mug.jpg')}" alt="Кружка Оленегорск" />
           <h3>Кружка</h3>
         </article>
         <article class="item">
-          <img src="/images/plate.jpg" alt="Тарелка декоративная" />
+          <img src="${img('plate.jpg')}" alt="Тарелка декоративная" />
           <h3>Тарелка</h3>
         </article>
         <article class="item">
-          <img src="/images/magnets.jpg" alt="Магниты с Оленегорском" />
+          <img src="${img('magnets.jpg')}" alt="Магниты с Оленегорском" />
           <h3>Магниты</h3>
         </article>
         <article class="item">
-          <img src="/images/puzzle.jpg" alt="Пазл на заказ" />
+          <img src="${img('puzzle.jpg')}" alt="Пазл на заказ" />
           <h3>Пазл</h3>
         </article>
         <article class="item">
-          <img src="/images/desk-calendar.jpg" alt="Календарь настольный" />
+          <img src="${img('desk-calendar.jpg')}" alt="Календарь настольный" />
           <h3>Настольный календарь</h3>
         </article>
         <article class="item">
-          <img src="/images/pillow.jpg" alt="Подушка с печатью" />
+          <img src="${img('pillow.jpg')}" alt="Подушка с печатью" />
           <h3>Подушка</h3>
         </article>
         <article class="item">
-          <img src="/images/postcards.jpg" alt="Открытки" />
+          <img src="${img('postcards.jpg')}" alt="Открытки" />
           <h3>Открытки</h3>
         </article>
         <article class="item">
-          <img src="/images/badges.jpg" alt="Значки на заказ" />
+          <img src="${img('badges.jpg')}" alt="Значки на заказ" />
           <h3>Значки</h3>
         </article>
       </div>
@@ -227,7 +230,7 @@ app.innerHTML = `
   </main>
 
   <footer class="site-footer">
-    <img src="/images/logo.jpg" alt="" width="48" height="48" />
+    <img src="${img('logo.jpg')}" alt="" width="48" height="48" />
     <p>ФотоСтудия Махновского · Оленегорск</p>
   </footer>
 `
