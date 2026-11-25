@@ -2,6 +2,9 @@
 
 Лендинг: съёмка, печать, сувениры, реставрация. Концепт: `design-concept.md` (`product-theater`).
 
+- **GitHub:** https://github.com/TeasSty/fsm-ol  
+- **GitHub Pages:** https://teassty.github.io/fsm-ol/
+
 ## Запуск
 
 ```bash
@@ -10,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Сборка: `npm run build` → `web/dist`.
+Сборка: `npm run build` → `web/dist`. Деплой на Pages — автоматически при пуше в `main`.
 
 ## Контакты в макете
 
